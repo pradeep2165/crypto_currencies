@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Line } from 'react-chartjs-2';
+import { Line} from 'react-chartjs-2';
 import { Col, Row, Typography } from 'antd';
 
 const { Title } = Typography;
@@ -41,6 +41,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     },
   };
 
+  console.log(options);
   return (
     <>
       <Row className="chart-header">
@@ -50,7 +51,8 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
           <Title level={5} className="current-price">Current {coinName} Price: $ {currentPrice}</Title>
         </Col>
       </Row>
-      {/* <Line data={data} options={options}/> */}
+      <Line data={data} options={options}/>
+      {/* <Doughnut data={data}/> */}
     </>
   );
 };
