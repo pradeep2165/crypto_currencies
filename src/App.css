@@ -56,3 +56,99 @@ a:hover{
   border: none !important;
 }
 
+.loader{
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-heading-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.search-crypto{
+  margin: 20px auto 30px auto;
+  width: 250px;
+}
+.crypto-card-container{
+  min-height: 65vh !important;
+}
+
+.crypto-card{
+  min-width: 250px;
+}
+.crypto-card .crypto-image{
+  width:35px;
+}
+.main{
+  flex: 0.8;
+  width: 100%;
+  
+}
+
+.routes{
+  padding: 20px;
+}
+
+@media screen and (max-width:1300px){
+  .main{
+      margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:1170px){
+  .main{
+      margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .main{
+      margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .app{
+      flex-direction: column;
+      overflow: hidden;
+  }
+
+  .navbar{
+      flex: 1;
+  }
+
+  .main{
+      flex: 1;
+      margin-top: 90px;
+      margin-left: 0px;
+      margin-right: 10px;
+  }
+
+  .nav-container{
+      height: 8vh;
+      position:fixed;
+      width: 100%;
+      z-index: 100;
+      background-color: var(--bgSecondary);
+  }
+
+  .menu-control-container{
+      display: block !important;
+  }
+
+  /* .ant-menu{
+      position: absolute;
+      right: 0px;
+  } */
+  .home-title{
+      font-size: 1.4rem !important;
+  }
+  .show-more{
+      font-size: 1.3rem !important;
+  }
+}

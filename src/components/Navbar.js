@@ -32,13 +32,13 @@ const Navbar = () => {
       </div>
       {activeMenu &&<Menu theme="dark">
         <Menu.Item icon={<HomeOutlined/>}>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item icon={<FundOutlined />}>
-          <Link to="/criptocurrencies">Criptocurrencies</Link>
+          <Link to="/cryptocurrencies">Criptocurrencies</Link>
         </Menu.Item>
         <Menu.Item icon={<MoneyCollectOutlined />}> 
-          <Link to="/exchange">Exchange</Link>
+          <Link to="/exchanges">Exchanges</Link>
         </Menu.Item>
         <Menu.Item icon={<BulbOutlined />}>
           <Link to="/news">News</Link>
