@@ -31,16 +31,16 @@ const Navbar = () => {
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu &&<Menu theme="dark">
-        <Menu.Item icon={<HomeOutlined/>}>
+        <Menu.Item icon={<HomeOutlined/>} key={"home"}>
           <Link to="/">Home</Link>
         </Menu.Item>
-        <Menu.Item icon={<FundOutlined />}>
-          <Link to="/cryptocurrencies">Criptocurrencies</Link>
+        <Menu.Item icon={<FundOutlined />} key={"cryptocurrencies"}>
+          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
         </Menu.Item>
-        <Menu.Item icon={<MoneyCollectOutlined />}> 
+        <Menu.Item icon={<MoneyCollectOutlined />} key={"exchanges"}> 
           <Link to="/exchanges">Exchanges</Link>
         </Menu.Item>
-        <Menu.Item icon={<BulbOutlined />}>
+        <Menu.Item icon={<BulbOutlined />} key={"News"}>
           <Link to="/news">News</Link>
         </Menu.Item>
       </Menu>}
